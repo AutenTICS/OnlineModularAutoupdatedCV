@@ -1,0 +1,23 @@
+{
+  "github": {
+    "username": "Tiggreee",
+    "token": "YOUR_GITHUB_TOKEN",
+    "syncEnabled": true,
+    "updateInterval": 3600
+  },
+  "drive": {
+    "email": "your-email@gmail.com",
+    "credentialsPath": "config/google-credentials.json",
+    "syncEnabled": true,
+    "folderId": "YOUR_FOLDER_ID"
+  },
+  "linkedin": {
+    "profileUrl": "in/victor-salgado-tiggreee",
+    "syncEnabled": true,
+    "updateInterval": 86400
+  },
+  "cv": {
+    "lastUpdated": "2026-01-01T00:00:00Z",
+    "autoPublish": true
+  }
+}
