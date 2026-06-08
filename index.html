@@ -215,7 +215,7 @@
     // ===== HELPER TOAST SYSTEM =====
     let toastCount = 0;
     const MAX_TOASTS = 2;
-    const TOAST_DURATION = 8000;
+    const TOAST_DURATION = 4000;
 
     class HelperToast {
       constructor(title, message) {
@@ -245,13 +245,16 @@
 
       dismiss() {
         if (this.element) {
-          this.element.classList.add('hide');
+          this.element.classList.add('fade-out');
           setTimeout(() => {
-            if (this.element && this.element.parentElement) {
-              this.element.remove();
-              toastCount--;
-            }
-          }, 300);
+            this.element.classList.add('hide');
+            setTimeout(() => {
+              if (this.element && this.element.parentElement) {
+                this.element.remove();
+                toastCount--;
+              }
+            }, 600);
+          }, 0);
         }
       }
     }

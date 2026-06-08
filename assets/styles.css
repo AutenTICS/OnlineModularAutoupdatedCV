@@ -94,6 +94,8 @@ header h1{font-size:3.2rem;font-weight:700;line-height:0.95;margin-bottom:10px;l
 .helper-toast-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--text-secondary);cursor:pointer;font-size:1.3rem}
 @keyframes slideIn{from{transform:translateX(260px);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes slideOut{from{transform:translateX(0);opacity:1}to{transform:translateX(260px);opacity:0}}
+@keyframes fadeOutSlow{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}
+.helper-toast.fade-out{animation:fadeOutSlow 4s ease forwards}
 .helper-toast.hide{animation:slideOut .28s ease forwards}
 /* Focus states for accessibility */
 :focus{outline:2px dashed var(--accent);outline-offset:3px}
