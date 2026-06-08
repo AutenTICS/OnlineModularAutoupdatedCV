@@ -88,10 +88,10 @@ header h1{font-size:3.2rem;font-weight:700;line-height:0.95;margin-bottom:10px;l
 .dev-mode-panel h2{color:var(--accent);margin-bottom:12px;font-size:1.4rem}
 .dev-close-btn{background:var(--accent);color:var(--bg-primary);border:none;padding:10px 16px;border-radius:8px;cursor:pointer;font-weight:700}
 /* Helper Toast */
-.helper-toast{position:fixed;bottom:28px;right:28px;background:var(--bg-secondary);border:1px solid var(--accent);border-radius:10px;padding:12px 16px;max-width:360px;z-index:1000;animation:slideIn .32s ease;box-shadow:0 14px 40px rgba(0,0,0,0.55)}
-.helper-toast h4{color:var(--accent);font-size:0.95rem;margin-bottom:6px}
-.helper-toast p{color:var(--text-secondary);font-size:0.9rem;line-height:1.35}
-.helper-toast-close{position:absolute;top:8px;right:12px;background:none;border:none;color:var(--text-secondary);cursor:pointer;font-size:1.1rem}
+.helper-toast{position:fixed;top:28px;right:28px;background:var(--bg-secondary);border:1px solid var(--accent);border-radius:10px;padding:22px 28px;max-width:520px;z-index:1000;animation:slideIn .32s ease;box-shadow:0 14px 40px rgba(0,0,0,0.55)}
+.helper-toast h4{color:var(--accent);font-size:1.3rem;margin-bottom:10px}
+.helper-toast p{color:var(--text-secondary);font-size:1.1rem;line-height:1.5}
+.helper-toast-close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--text-secondary);cursor:pointer;font-size:1.3rem}
 @keyframes slideIn{from{transform:translateX(260px);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes slideOut{from{transform:translateX(0);opacity:1}to{transform:translateX(260px);opacity:0}}
 .helper-toast.hide{animation:slideOut .28s ease forwards}
@@ -138,4 +138,18 @@ header h1{font-size:3.2rem;font-weight:700;line-height:0.95;margin-bottom:10px;l
 .sticky-btn:hover svg{opacity:1}
 @media print{
   .sticky-actions{display:none!important}
+  body{padding:0;background:#fff;color:#000;font-size:0.85rem}
+  .page{max-width:100%}
+  .cv-container{box-shadow:none;border:none;background:#fff;gap:20px;padding:16px;max-height:100vh}
+  .sidebar{border-right:1px solid #ccc}
+  .skill-group,.contact-section{background:none;border-color:#ccc}
+  .main-content{font-size:0.85rem}
+  header h1{font-size:2rem}
+  .summary,.exp-content,.project-desc,.edu-list,.keywords{color:#333;font-size:0.8rem}
+  .section-title{font-size:1rem;margin-bottom:10px}
+  .experience-item{margin-bottom:12px}
+  .project-grid{gap:8px}
+  .project-card{padding:8px;border-color:#ccc;background:#f9f9f9}
+  .page-break-visual{page-break-before:auto}
+  .footer-credit{margin-top:12px;padding-top:8px}
 }
