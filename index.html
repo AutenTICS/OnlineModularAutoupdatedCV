@@ -259,17 +259,13 @@
       }
     }
 
-    // ===== FIRST LOAD: SETUP HELPER =====
+    // ===== FIRST ACCESS HELPER (shows every visit) =====
     function showFirstLoadHelper() {
-      const hasSeenFirstHelper = sessionStorage.getItem('seenFirstHelper');
-      if (!hasSeenFirstHelper) {
-        const toast = new HelperToast(
-          '💡 Primer acceso',
-          'Presiona Ctrl + Shift + D para acceder a configuración. Tu foto va en assets/photo.webp'
-        );
-        toast.show();
-        sessionStorage.setItem('seenFirstHelper', 'true');
-      }
+      const toast = new HelperToast(
+        'First access',
+        'Press Ctrl + Shift + D to open developer mode. Your photo goes in assets/photo.webp'
+      );
+      toast.show();
     }
 
     // ===== DEV MODE: SECOND HELPER =====
